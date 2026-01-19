@@ -9,6 +9,12 @@ cask "dont-forget-your-breaks" do
 
   app "Dont Forget Your Breaks.app"
 
+  # Remove quarantine attribute to avoid Gatekeeper warnings
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/Dont Forget Your Breaks.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/DontForgetYourBreaks",
     "~/Library/Preferences/com.yairs.dontforgetyourbreaks.json",
