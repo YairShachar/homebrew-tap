@@ -1,6 +1,6 @@
 cask "dont-forget-your-breaks" do
-  version "1.0.3"
-  sha256 "239292ff2e0b30de3e65a5c8868dacd6164fd59d7ce47dfadfc5cee89f2c597d"
+  version "1.0.5"
+  sha256 "318d0d7ed8d6f225b19bc49f30799c3edbf8a63505eaf826e910106b8f1ed415"
 
   url "https://github.com/YairShachar/dont-forget-your-breaks/releases/download/v#{version}/DontForgetYourBreaks.dmg"
   name "Don't Forget Your Breaks"
